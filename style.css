@@ -34,11 +34,26 @@
     align-items: center;
   }
   
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00ffff;
-  }
+ /* SN Logo Icon */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #00ffffaa;
+}
   
   .navbar nav a {
     margin: 0 1rem;
@@ -79,6 +94,49 @@
     margin-top: 1rem;
     color: #ccc;
   }
+
+  /* Home Section Flex Layout */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-width: 200px;
+}
+
+.home-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 180px;
+    margin-top: 1rem;
+  }
+}
   
   /* Skills */
   .skills ul {
@@ -137,11 +195,15 @@
     background: #00cccc;
   }
   
-  /* Contact */
-  .contact p {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-  }
+ /* Responsive Contact Links */
+.contact a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
   
   /* Scroll to top */
   #scrollTopBtn {

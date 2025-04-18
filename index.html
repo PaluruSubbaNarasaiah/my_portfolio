@@ -10,9 +10,10 @@
 <body>
 
   <canvas id="background-canvas"></canvas>
-
   <header class="navbar">
-    <div class="logo">SN</div>
+    <div class="logo">
+      <div class="logo-icon">SN</div>
+    </div>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -22,10 +23,18 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+  
 
   <section id="home" class="section home">
-    <h1>Hi, I'm <span>Paluru Subba Narasaiah</span></h1>
-    <p class="animated-text">Web Developer | JavaScript Enthusiast | React & Node.js Developer</p>
+    <div class="home-container">
+      <div class="home-text">
+        <h1>Hi, I'm <span>Paluru Subba Narasaiah</span></h1>
+        <p class="animated-text">Web Developer | JavaScript Enthusiast | React & Node.js Developer</p>
+      </div>
+      <div class="home-image">
+        <img src="images/profile4.jpg" alt="Profile Picture" />
+      </div>
+    </div>
   </section>
 
   <section id="about" class="section about">
@@ -60,8 +69,8 @@
 
   <section id="contact" class="section contact">
     <h2>Contact Me</h2>
-    <p>Email: palurusubbanarasaiah@gmail.com</p>
-    <p>Phone: +91 8978084121</p>
+    <p>Email: <a href="mailto:palurusubbanarasaiah@gmail.com">palurusubbanarasaiah@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918978084121">+91 8978084121</a></p>
   </section>
 
   <button id="scrollTopBtn">↑</button>
